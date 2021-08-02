@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/lmatthew87/BoxOfficeClient/issues"
   },
-  "homepage": "https://github.com/lmatthew87/BoxOfficeClient#readme"
+  "homepage": "https://github.com/lmatthew87/BoxOfficeClient#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-beta.3.1"
+  }
 }
