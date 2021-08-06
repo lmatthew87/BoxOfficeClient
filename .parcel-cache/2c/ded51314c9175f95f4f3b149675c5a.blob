@@ -21868,15 +21868,6 @@ class MainView extends _reactDefault.default.Component {
             movies: []
         };
     }
-    componentDidMount() {
-        _axiosDefault.default.get('hhttps://pacific-thicket-04049.herokuapp.com/movies').then((response)=>{
-            this.setState({
-                movies: response.data
-            });
-        }).catch((error)=>{
-            console.log(error);
-        });
-    }
     setSelectedMovie(newSelectedMovie) {
         this.setState({
             selectedMovie: newSelectedMovie
@@ -21888,7 +21879,7 @@ class MainView extends _reactDefault.default.Component {
             className: "main-view",
             __source: {
                 fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\main-view\\main-view.jsx",
-                lineNumber: 39
+                lineNumber: 28
             },
             __self: this
         }, "The list is empty!"));
@@ -21896,7 +21887,7 @@ class MainView extends _reactDefault.default.Component {
             className: "main-view",
             __source: {
                 fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\main-view\\main-view.jsx",
-                lineNumber: 42
+                lineNumber: 31
             },
             __self: this
         }, selectedMovie ? /*#__PURE__*/ _reactDefault.default.createElement(_movieView.MovieView, {
@@ -21906,7 +21897,7 @@ class MainView extends _reactDefault.default.Component {
             },
             __source: {
                 fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\main-view\\main-view.jsx",
-                lineNumber: 44
+                lineNumber: 33
             },
             __self: this
         }) : movies.map((movie)=>/*#__PURE__*/ _reactDefault.default.createElement(_movieCard.MovieCard, {
@@ -21917,7 +21908,7 @@ class MainView extends _reactDefault.default.Component {
                 },
                 __source: {
                     fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\main-view\\main-view.jsx",
-                    lineNumber: 46
+                    lineNumber: 35
                 },
                 __self: this
             })
@@ -23583,4 +23574,4 @@ module.exports = CancelToken;
 
 },{}],"5N9Dt":[function() {},{}]},["1j6wU","1JPgO","7Lrzi"], "7Lrzi", "parcelRequire1c55")
 
-//# sourceMappingURL=index.31b64cd4.js.map
+//# sourceMappingURL=index.HASH_REF_03be679c3bab68001a23effc31b64cd4.js.map
