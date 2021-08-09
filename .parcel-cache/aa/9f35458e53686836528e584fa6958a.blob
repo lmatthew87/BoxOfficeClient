@@ -24915,7 +24915,6 @@ function LoginView(props) {
     const handleSubmit = ()=>{
         e.preventDefault();
         console.log(username, password);
-        props.onLoggedIn(username);
     /* Send a request to the server for authentication */ /* then call props.onLoggedIn(username) */ // props.onLoggedIn(username);
     };
     const goRegister = ()=>{
@@ -24925,33 +24924,33 @@ function LoginView(props) {
         className: "main-view justify-content-md-center",
         __source: {
             fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\login-view\\login-view.jsx",
-            lineNumber: 26
+            lineNumber: 25
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_colDefault.default, {
         md: 8,
         __source: {
             fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\login-view\\login-view.jsx",
-            lineNumber: 27
+            lineNumber: 26
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default, {
         __source: {
             fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\login-view\\login-view.jsx",
-            lineNumber: 28
+            lineNumber: 27
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Group, {
         controlId: "formUsername",
         __source: {
             fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\login-view\\login-view.jsx",
-            lineNumber: 29
+            lineNumber: 28
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Label, {
         __source: {
             fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\login-view\\login-view.jsx",
-            lineNumber: 30
+            lineNumber: 29
         },
         __self: this
     }, "Username:"), /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Control, {
@@ -24960,20 +24959,20 @@ function LoginView(props) {
         ,
         __source: {
             fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\login-view\\login-view.jsx",
-            lineNumber: 31
+            lineNumber: 30
         },
         __self: this
     })), /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Group, {
         controlId: "formPassword",
         __source: {
             fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\login-view\\login-view.jsx",
-            lineNumber: 34
+            lineNumber: 33
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Label, {
         __source: {
             fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\login-view\\login-view.jsx",
-            lineNumber: 35
+            lineNumber: 34
         },
         __self: this
     }, "Password:"), /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Control, {
@@ -24982,7 +24981,7 @@ function LoginView(props) {
         ,
         __source: {
             fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\login-view\\login-view.jsx",
-            lineNumber: 36
+            lineNumber: 35
         },
         __self: this
     })), /*#__PURE__*/ _reactDefault.default.createElement(_buttonDefault.default, {
@@ -24991,7 +24990,7 @@ function LoginView(props) {
         onClick: handleSubmit,
         __source: {
             fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\login-view\\login-view.jsx",
-            lineNumber: 38
+            lineNumber: 37
         },
         __self: this
     }, "Submit"), /*#__PURE__*/ _reactDefault.default.createElement(_buttonDefault.default, {
@@ -25000,7 +24999,7 @@ function LoginView(props) {
         onClick: goRegister,
         __source: {
             fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\login-view\\login-view.jsx",
-            lineNumber: 41
+            lineNumber: 40
         },
         __self: this
     }, "Register")))));
@@ -26276,4 +26275,4 @@ module.exports = exports["default"];
 
 },{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/extends":"3krLJ","@babel/runtime/helpers/objectWithoutPropertiesLoose":"3Yx9V","classnames":"5aJRc","react":"3b2NM","./ThemeProvider":"4rz1S"}]},["1j6wU","1JPgO","7Lrzi"], "7Lrzi", "parcelRequire1c55")
 
-//# sourceMappingURL=index.31b64cd4.js.map
+//# sourceMappingURL=index.HASH_REF_03be679c3bab68001a23effc31b64cd4.js.map
