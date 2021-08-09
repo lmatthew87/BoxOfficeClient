@@ -21957,23 +21957,26 @@ class MainView extends _reactDefault.default.Component {
                 },
                 __self: this
             }));
-            else return(/*#__PURE__*/ _reactDefault.default.createElement(_loginView.LoginView, {
-                onLoggedIn: (user1)=>this.onLoggedIn(user1)
-                ,
-                onRegister: ()=>this.setRegistering(true)
-                ,
-                __source: {
-                    fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\main-view\\main-view.jsx",
-                    lineNumber: 101
-                },
-                __self: this
-            }));
+            else {
+                var Logout;
+                return(/*#__PURE__*/ _reactDefault.default.createElement(_loginView.LoginView, {
+                    onLoggedIn: (user1)=>this.onLoggedIn(user1)
+                    ,
+                    onRegister: ()=>this.setRegistering(true)
+                    ,
+                    __source: {
+                        fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\main-view\\main-view.jsx",
+                        lineNumber: 101
+                    },
+                    __self: this
+                }));
+            }
         }
         if (movies.length === 0) return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "main-view",
             __source: {
                 fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\main-view\\main-view.jsx",
-                lineNumber: 106
+                lineNumber: 107
             },
             __self: this
         }, "Loading or the list is empty"));
@@ -21981,14 +21984,14 @@ class MainView extends _reactDefault.default.Component {
             className: "main-view justify-content-md-center",
             __source: {
                 fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\main-view\\main-view.jsx",
-                lineNumber: 110
+                lineNumber: 111
             },
             __self: this
         }, selectedMovie ? /*#__PURE__*/ _reactDefault.default.createElement(_colDefault.default, {
             md: 8,
             __source: {
                 fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\main-view\\main-view.jsx",
-                lineNumber: 113
+                lineNumber: 114
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement(_movieView.MovieView, {
@@ -21998,14 +22001,14 @@ class MainView extends _reactDefault.default.Component {
             },
             __source: {
                 fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\main-view\\main-view.jsx",
-                lineNumber: 114
+                lineNumber: 115
             },
             __self: this
         })) : movies.map((movie)=>/*#__PURE__*/ _reactDefault.default.createElement(_colDefault.default, {
                 md: 3,
                 __source: {
                     fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\main-view\\main-view.jsx",
-                    lineNumber: 118
+                    lineNumber: 119
                 },
                 __self: this
             }, /*#__PURE__*/ _reactDefault.default.createElement(_movieCard.MovieCard, {
@@ -22016,7 +22019,7 @@ class MainView extends _reactDefault.default.Component {
                 },
                 __source: {
                     fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\main-view\\main-view.jsx",
-                    lineNumber: 119
+                    lineNumber: 120
                 },
                 __self: this
             }))
@@ -26320,4 +26323,4 @@ module.exports = exports["default"];
 
 },{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/extends":"3krLJ","@babel/runtime/helpers/objectWithoutPropertiesLoose":"3Yx9V","classnames":"5aJRc","react":"3b2NM","./ThemeProvider":"4rz1S"}]},["1j6wU","1JPgO","7Lrzi"], "7Lrzi", "parcelRequire1c55")
 
-//# sourceMappingURL=index.31b64cd4.js.map
+//# sourceMappingURL=index.HASH_REF_03be679c3bab68001a23effc31b64cd4.js.map

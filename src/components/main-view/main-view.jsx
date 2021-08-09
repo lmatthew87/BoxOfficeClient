@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button';
 
 import { LoginView } from '../login-view/login-view';
 import { RegistrationView } from '../registration-view/registration-view';
@@ -46,6 +47,16 @@ export class MainView extends React.Component {
       });
   }
 
+  componentDidMount() {
+    let accessToken = localStorage.getItem('token');
+    if (accessToken !== null) {
+      this.setState({
+        user: localStorage.getItem('user')
+      });
+      this.getMovies(accessToken);
+    }
+  }
+
 
   setSelectedMovie(newSelectedMovie) {
     this.setState({
@@ -64,6 +75,15 @@ export class MainView extends React.Component {
   this.getMovies(authData.token);
   }
 
+  onLoggedOut() {
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
+    this.setState({
+      user: null
+    });
+  }
+
+
   setRegistering(registering) {
     this.setState({
       registering
@@ -79,6 +99,7 @@ export class MainView extends React.Component {
         return <RegistrationView onComplete={() => this.setRegistering(false)} />;
       } else {
         return <LoginView onLoggedIn={user => this.onLoggedIn(user)} onRegister={() => this.setRegistering(true)} />;
+        
       }
     }
 

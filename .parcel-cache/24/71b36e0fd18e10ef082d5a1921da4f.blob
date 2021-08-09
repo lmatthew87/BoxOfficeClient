@@ -21871,8 +21871,6 @@ var _col = require("react-bootstrap/Col");
 var _colDefault = parcelHelpers.interopDefault(_col);
 var _row = require("react-bootstrap/Row");
 var _rowDefault = parcelHelpers.interopDefault(_row);
-var _button = require("react-bootstrap/Button");
-var _buttonDefault = parcelHelpers.interopDefault(_button);
 var _loginView = require("../login-view/login-view");
 var _registrationView = require("../registration-view/registration-view");
 var _movieCard = require("../movie-card/movie-card");
@@ -21953,7 +21951,7 @@ class MainView extends _reactDefault.default.Component {
                 ,
                 __source: {
                     fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\main-view\\main-view.jsx",
-                    lineNumber: 99
+                    lineNumber: 98
                 },
                 __self: this
             }));
@@ -21964,7 +21962,7 @@ class MainView extends _reactDefault.default.Component {
                 ,
                 __source: {
                     fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\main-view\\main-view.jsx",
-                    lineNumber: 101
+                    lineNumber: 100
                 },
                 __self: this
             }));
@@ -21973,7 +21971,7 @@ class MainView extends _reactDefault.default.Component {
             className: "main-view",
             __source: {
                 fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\main-view\\main-view.jsx",
-                lineNumber: 106
+                lineNumber: 105
             },
             __self: this
         }, "Loading or the list is empty"));
@@ -21981,14 +21979,14 @@ class MainView extends _reactDefault.default.Component {
             className: "main-view justify-content-md-center",
             __source: {
                 fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\main-view\\main-view.jsx",
-                lineNumber: 110
+                lineNumber: 109
             },
             __self: this
         }, selectedMovie ? /*#__PURE__*/ _reactDefault.default.createElement(_colDefault.default, {
             md: 8,
             __source: {
                 fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\main-view\\main-view.jsx",
-                lineNumber: 113
+                lineNumber: 112
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement(_movieView.MovieView, {
@@ -21998,14 +21996,14 @@ class MainView extends _reactDefault.default.Component {
             },
             __source: {
                 fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\main-view\\main-view.jsx",
-                lineNumber: 114
+                lineNumber: 113
             },
             __self: this
         })) : movies.map((movie)=>/*#__PURE__*/ _reactDefault.default.createElement(_colDefault.default, {
                 md: 3,
                 __source: {
                     fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\main-view\\main-view.jsx",
-                    lineNumber: 118
+                    lineNumber: 117
                 },
                 __self: this
             }, /*#__PURE__*/ _reactDefault.default.createElement(_movieCard.MovieCard, {
@@ -22016,7 +22014,7 @@ class MainView extends _reactDefault.default.Component {
                 },
                 __source: {
                     fileName: "C:\\Users\\Matthew\\Documents\\CareerFoundry\\boxofficeclient\\src\\components\\main-view\\main-view.jsx",
-                    lineNumber: 119
+                    lineNumber: 118
                 },
                 __self: this
             }))
@@ -22029,7 +22027,7 @@ class MainView extends _reactDefault.default.Component {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"1TGj2","../../../../../../AppData/Roaming/nvm/v14.15.1/node_modules/parcel/node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"1hWTm","../movie-card/movie-card":"6sbhZ","../movie-view/movie-view":"24GrA","axios":"7rA65","../login-view/login-view":"48UOw","../registration-view/registration-view":"1vlCq","react-bootstrap/Col":"2D0r8","react-bootstrap/Row":"3fzwD","react-bootstrap/Button":"1ru0l"}],"1TGj2":[function(require,module,exports) {
+},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"1TGj2","../../../../../../AppData/Roaming/nvm/v14.15.1/node_modules/parcel/node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"1hWTm","../movie-card/movie-card":"6sbhZ","../movie-view/movie-view":"24GrA","axios":"7rA65","../login-view/login-view":"48UOw","../registration-view/registration-view":"1vlCq","react-bootstrap/Col":"2D0r8","react-bootstrap/Row":"3fzwD"}],"1TGj2":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -26320,4 +26318,4 @@ module.exports = exports["default"];
 
 },{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/extends":"3krLJ","@babel/runtime/helpers/objectWithoutPropertiesLoose":"3Yx9V","classnames":"5aJRc","react":"3b2NM","./ThemeProvider":"4rz1S"}]},["1j6wU","1JPgO","7Lrzi"], "7Lrzi", "parcelRequire1c55")
 
-//# sourceMappingURL=index.31b64cd4.js.map
+//# sourceMappingURL=index.HASH_REF_03be679c3bab68001a23effc31b64cd4.js.map
