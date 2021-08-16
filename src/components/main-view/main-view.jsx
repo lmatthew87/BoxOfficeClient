@@ -17,7 +17,7 @@ export class MainView extends React.Component {
       movies: [],
       selectedMovie: null,
       user: null,
-      registering: false
+      registering: null
     }
   }
   getMovies(token) {
@@ -106,17 +106,20 @@ export class MainView extends React.Component {
     if (movies.length === 0) return <div className="main-view">Loading or the list is empty</div>;
 
     return (
-
+       
       <Row className="main-view justify-content-md-center">
+        
         {selectedMovie
           ? (
             <Col md={8}>
               <MovieView movie={selectedMovie} onBackClick={newSelectedMovie => { this.setSelectedMovie(newSelectedMovie); }} />
+              <button onClick={() => { this.onLoggedOut() }}>Logout</button>
             </Col>
           )
           : movies.map(movie => (
             <Col md={3}>
               <MovieCard key={movie._id} movie={movie} onMovieClick={newSelectedMovie => { this.setSelectedMovie(newSelectedMovie); }} />
+              
             </Col>
           ))
         }

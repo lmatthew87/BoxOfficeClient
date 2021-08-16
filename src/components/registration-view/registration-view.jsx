@@ -1,12 +1,26 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 export function RegistrationView(props) {
   const [ username, setUsername ] = useState('');
   const [ password, setPassword ] = useState('');
+  const [ email, setEmail ] = useState('');
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(username, password);
+    axios.post('https://pacific-thicket-04049.herokuapp.com/users', {
+      Username: username,
+      Password: password,
+      Email: email
+    })
+    .then(response => {
+      const data = response.data;
+      //props.onLoggedIn(data);
+    })
+    .catch(e => {
+      console.log('error creating user', e)
+    });
+  ;
     /* Send a request to the server to register the user */
     /* then switch to the LoginView */
     props.onComplete();
@@ -22,7 +36,11 @@ export function RegistrationView(props) {
         Password:
         <input type="password" value={password} onChange={e => setPassword(e.target.value)} />
       </label>
+      <label>
+        Email:
+        <input type="text" value={email} onChange={e => setEmail(e.target.value)} />
+      </label>
       <button type="submit" onClick={handleSubmit}>Submit</button>
     </form>
   );
-}
+  }
